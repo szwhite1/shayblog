@@ -1,0 +1,14 @@
+<html>
+    <head>
+        {% if title %}
+        <title>{{ title }} - ShayBlog</title>
+        {% else %}
+        <title>Welcome to ShayBlog!</title>
+        {% endif %}
+    </head>
+    <body>
+        <div>ShayBlog: <a href="/index">Home</a></div>
+        {% block content %}{% endblock %}
+        <div>ShayBlog © 2021 Rhaspsody Shay</div>
+    </body>
+</html>
