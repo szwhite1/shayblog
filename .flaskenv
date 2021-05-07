@@ -1,1 +1,2 @@
 FLASK_APP=shayblog.py
+FLASK_ENV=development
