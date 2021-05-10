@@ -1,2 +1,7 @@
 **/__pycache__/
 .vscode
+.pot
+.env
+tests/xml_reports/
+tests/html_reports/
+logs
