@@ -1,5 +1,10 @@
-from myapp import app, db
+from myapp import create_app, db, cli
 from myapp.models import User, Post
+
+
+app = create_app()
+cli.register(app)
+
 
 @app.shell_context_processor
 def make_shell_context():
