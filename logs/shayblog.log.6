@@ -1,0 +1,86 @@
+2021-05-10 14:55:54,583 INFO: ShayBlog startup [in /home/szwhite/shayblog/myapp/__init__.py:43]
+2021-05-10 15:08:20,672 INFO: ShayBlog startup [in /home/szwhite/shayblog/myapp/__init__.py:43]
+2021-05-11 10:36:10,757 INFO: ShayBlog startup [in /home/szwhite/shayblog/myapp/__init__.py:43]
+2021-05-11 10:36:21,912 INFO: ShayBlog startup [in /home/szwhite/shayblog/myapp/__init__.py:43]
+2021-05-11 10:36:31,753 INFO: ShayBlog startup [in /home/szwhite/shayblog/myapp/__init__.py:43]
+2021-05-11 10:41:24,825 INFO: ShayBlog startup [in /home/szwhite/shayblog/myapp/__init__.py:43]
+2021-05-11 10:50:38,026 INFO: ShayBlog startup [in /home/szwhite/shayblog/myapp/__init__.py:43]
+2021-05-11 10:53:26,263 INFO: ShayBlog startup [in /home/szwhite/shayblog/myapp/__init__.py:43]
+2021-05-11 13:36:01,065 INFO: ShayBlog startup [in /home/szwhite/shayblog/myapp/__init__.py:43]
+2021-05-11 13:55:55,711 INFO: ShayBlog startup [in /home/szwhite/shayblog/myapp/__init__.py:43]
+2021-05-11 14:16:11,787 INFO: ShayBlog startup [in /home/szwhite/shayblog/myapp/__init__.py:43]
+2021-05-11 14:56:00,339 INFO: ShayBlog startup [in /home/szwhite/shayblog/myapp/__init__.py:43]
+2021-05-11 14:57:51,692 ERROR: Exception on /index [POST] [in /home/szwhite/shayblog/sbvenv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/szwhite/shayblog/sbvenv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/szwhite/shayblog/sbvenv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/szwhite/shayblog/sbvenv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/szwhite/shayblog/sbvenv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/szwhite/shayblog/sbvenv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/szwhite/shayblog/sbvenv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/szwhite/shayblog/sbvenv/lib/python3.8/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/szwhite/shayblog/myapp/routes.py", line 21, in index
+    post = Post(body=form.post.date, author=current_user)
+AttributeError: 'TextAreaField' object has no attribute 'date'
+2021-05-11 14:59:06,025 INFO: ShayBlog startup [in /home/szwhite/shayblog/myapp/__init__.py:43]
+2021-05-11 15:15:56,710 INFO: ShayBlog startup [in /home/szwhite/shayblog/myapp/__init__.py:43]
+2021-05-11 15:49:12,773 INFO: ShayBlog startup [in /home/szwhite/shayblog/myapp/__init__.py:43]
+2021-05-11 16:05:21,701 INFO: ShayBlog startup [in /home/szwhite/shayblog/myapp/__init__.py:43]
+2021-05-11 16:15:46,044 INFO: ShayBlog startup [in /home/szwhite/shayblog/myapp/__init__.py:43]
+2021-05-11 17:03:25,599 INFO: ShayBlog startup [in /home/szwhite/shayblog/myapp/__init__.py:43]
+2021-05-11 17:03:55,076 INFO: ShayBlog startup [in /home/szwhite/shayblog/myapp/__init__.py:43]
+2021-05-11 17:04:45,510 INFO: ShayBlog startup [in /home/szwhite/shayblog/myapp/__init__.py:43]
+2021-05-11 17:05:04,966 INFO: ShayBlog startup [in /home/szwhite/shayblog/myapp/__init__.py:43]
+2021-05-12 08:35:28,685 INFO: ShayBlog startup [in /home/szwhite/shayblog/myapp/__init__.py:45]
+2021-05-12 08:47:36,778 INFO: ShayBlog startup [in /home/szwhite/shayblog/myapp/__init__.py:45]
+2021-05-12 08:54:03,611 INFO: ShayBlog startup [in /home/szwhite/shayblog/myapp/__init__.py:45]
+2021-05-12 11:26:06,275 INFO: ShayBlog startup [in /home/szwhite/shayblog/myapp/__init__.py:45]
+2021-05-12 11:30:35,352 INFO: ShayBlog startup [in /home/szwhite/shayblog/myapp/__init__.py:45]
+2021-05-12 12:21:50,571 INFO: ShayBlog startup [in /home/szwhite/shayblog/myapp/__init__.py:45]
+2021-05-12 12:23:04,006 INFO: ShayBlog startup [in /home/szwhite/shayblog/myapp/__init__.py:45]
+2021-05-12 12:25:14,217 INFO: ShayBlog startup [in /home/szwhite/shayblog/myapp/__init__.py:45]
+2021-05-12 12:31:56,585 INFO: ShayBlog startup [in /home/szwhite/shayblog/myapp/__init__.py:45]
+2021-05-12 14:14:00,186 INFO: ShayBlog startup [in /home/szwhite/shayblog/myapp/__init__.py:45]
+2021-05-12 14:19:15,002 ERROR: Exception on /reset_password/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZXNldF9wYXNzd29yZCI6NSwiZXhwIjoxNjIwODQ0MTE4LjM0MTg2NTV9.OVTUfgzejVYkBUz3xtmA3PHEAvhcPNglWkmTi1yc6gA [GET] [in /home/szwhite/shayblog/sbvenv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/szwhite/shayblog/sbvenv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/szwhite/shayblog/sbvenv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/szwhite/shayblog/sbvenv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/szwhite/shayblog/sbvenv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/szwhite/shayblog/sbvenv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/szwhite/shayblog/sbvenv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/szwhite/shayblog/myapp/routes.py", line 115, in reset_password
+    return render_template('reset_password.html', form=form)
+  File "/home/szwhite/shayblog/sbvenv/lib/python3.8/site-packages/flask/templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/szwhite/shayblog/sbvenv/lib/python3.8/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/szwhite/shayblog/sbvenv/lib/python3.8/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/szwhite/shayblog/sbvenv/lib/python3.8/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/szwhite/shayblog/sbvenv/lib/python3.8/site-packages/jinja2/loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "/home/szwhite/shayblog/sbvenv/lib/python3.8/site-packages/jinja2/environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "/home/szwhite/shayblog/sbvenv/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/szwhite/shayblog/sbvenv/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/szwhite/shayblog/myapp/templates/reset_password.html", line 10, in template
+    {{ for error in form.password.errors %}}
+jinja2.exceptions.TemplateSyntaxError: expected token 'end of print statement', got 'error'
+2021-05-12 14:31:28,995 INFO: ShayBlog startup [in /home/szwhite/shayblog/myapp/__init__.py:45]
