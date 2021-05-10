@@ -1,0 +1,239 @@
+# French translations for PROJECT.
+# Copyright (C) 2021 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2021-05-19 10:05-0400\n"
+"PO-Revision-Date: 2021-05-19 10:09-0400\n"
+"Last-Translator: \n"
+"Language: fr\n"
+"Language-Team: fr <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"X-Generator: Poedit 2.4.3\n"
+
+#: myapp/__init__.py:21
+msgid "Please log in to access this page."
+msgstr "SVP Connectez-vous pour accéder à cette page."
+
+#: myapp/forms.py:8 myapp/forms.py:14 myapp/forms.py:43
+msgid "Username"
+msgstr "Nom d'utilisateur"
+
+#: myapp/forms.py:9 myapp/forms.py:16 myapp/forms.py:37
+msgid "Password"
+msgstr "Mot de passe"
+
+#: myapp/forms.py:10
+msgid "Remember Me"
+msgstr "Se souvenir de moi"
+
+#: myapp/forms.py:11 myapp/templates/login.html:5
+msgid "Sign In"
+msgstr "Se connecter"
+
+#: myapp/forms.py:15 myapp/forms.py:32
+msgid "Email"
+msgstr "Courriel"
+
+#: myapp/forms.py:17 myapp/forms.py:38
+msgid "Repeat Password"
+msgstr "Répéter le mot de passe"
+
+#: myapp/forms.py:18 myapp/templates/register.html:5
+msgid "Register"
+msgstr "S'inscrire"
+
+#: myapp/forms.py:23 myapp/forms.py:55
+msgid "Username is already in use. Please select a different username."
+msgstr ""
+"Le nom d'utilisateur est déjà utilisé. Veuillez choisir un autre nom "
+"d'utilisateur."
+
+#: myapp/forms.py:28
+msgid "Email address is already in use. Please provide a different email address."
+msgstr ""
+"L'adresse électronique est déjà utilisée. Veuillez fournir une autre adresse "
+"électronique."
+
+#: myapp/forms.py:33 myapp/forms.py:39
+msgid "Request Password Reset"
+msgstr "Demande de réinitialisation de mot de passe"
+
+#: myapp/forms.py:44
+msgid "About Me"
+msgstr "À propos de moi"
+
+#: myapp/forms.py:45 myapp/forms.py:59
+msgid "Submit"
+msgstr "Envoyer"
+
+#: myapp/routes.py:34
+msgid "Your post in now live!"
+msgstr "Votre message est maintenant en ligne !"
+
+#: myapp/routes.py:65
+msgid "Invalid username or password"
+msgstr "Nom d'utilisateur ou mot de passe invalide"
+
+#: myapp/routes.py:92
+msgid "Congratulations, you are now a registered user!"
+msgstr "Félicitations, vous êtes maintenant un utilisateur enregistré !"
+
+#: myapp/routes.py:106
+msgid "Check your email for the instructions to reset your password"
+msgstr ""
+"Consultez votre courrier électronique pour connaître les instructions de "
+"réinitialisation de votre mot de passe"
+
+#: myapp/routes.py:122
+msgid "Your password has been reset."
+msgstr "Votre mot de passe a été réinitialisé."
+
+#: myapp/routes.py:151
+msgid "Your changes have been saved."
+msgstr "Vos modifications ont été sauvegardées."
+
+#: myapp/routes.py:166 myapp/routes.py:186
+#, python-format
+msgid "User %(username)s not found."
+msgstr "Utilisateur %(username)s non trouvé."
+
+#: myapp/routes.py:169
+msgid "You cannot follow yourself!"
+msgstr "Vous ne pouvez pas vous suivre !"
+
+#: myapp/routes.py:173
+#, python-format
+msgid "You are now following %(username)s!"
+msgstr "Vous suivez maintenant %(username)s !"
+
+#: myapp/routes.py:189
+msgid "You cannot unfollow yourself!"
+msgstr "Vous ne pouvez pas vous épanouir !"
+
+#: myapp/routes.py:193
+#, python-format
+msgid "You unfollowed %(username)s"
+msgstr "Vous n'avez pas suivi les %(username)s"
+
+#: myapp/translate.py:10
+msgid "Error: the translation service is not configured."
+msgstr "Erreur : le service de traduction n'est pas configuré."
+
+#: myapp/translate.py:20
+msgid "Error: the translation service failed."
+msgstr "Erreur : le service de traduction a échoué."
+
+#: myapp/templates/404.html:4
+msgid "Not Found"
+msgstr "Non trouvé"
+
+#: myapp/templates/404.html:5 myapp/templates/500.html:6
+msgid "Back"
+msgstr "Retour"
+
+#: myapp/templates/500.html:4
+msgid "An unexpected error has occurred"
+msgstr "Un erreur inattendue s'est produite"
+
+#: myapp/templates/500.html:5
+msgid "The administrator has been notified. Sorry for the inconvenience!"
+msgstr "L'administrateur a été informé. Désolé pour le désagrément !"
+
+#: myapp/templates/_post.html:14
+#, python-format
+msgid "%(username)s said %(when)s"
+msgstr "%(username)s dit %(when)s"
+
+#: myapp/templates/_post.html:24
+msgid "Translate"
+msgstr "Traduire"
+
+#: myapp/templates/base.html:4
+msgid "Welcome to ShayBlog!"
+msgstr "Bienvenue sur ShayBlog !"
+
+#: myapp/templates/base.html:21
+msgid "Home"
+msgstr "Accueil"
+
+#: myapp/templates/base.html:22
+msgid "Explore"
+msgstr "Explorer"
+
+#: myapp/templates/base.html:26
+msgid "Login"
+msgstr "Connexion"
+
+#: myapp/templates/base.html:28
+msgid "Profile"
+msgstr "Profil"
+
+#: myapp/templates/base.html:29
+msgid "Logout"
+msgstr "Déconnexion"
+
+#: myapp/templates/base.html:66
+msgid "Error: Could not contact server."
+msgstr "Erreur : Impossible de contacter le serveur."
+
+#: myapp/templates/edit_profile.html:5 myapp/templates/user.html:13
+msgid "Edit Profile"
+msgstr "Modifier le profil"
+
+#: myapp/templates/index.html:5
+#, python-format
+msgid "Welcome, %(username)s!"
+msgstr "Bienvenue, %(username)s !"
+
+#: myapp/templates/index.html:17
+msgid "Newer Posts"
+msgstr "Articles plus récents"
+
+#: myapp/templates/index.html:22
+msgid "Older Posts"
+msgstr "Articles plus anciens"
+
+#: myapp/templates/login.html:12
+msgid "New User?"
+msgstr "Nouvel utilisateur?"
+
+#: myapp/templates/login.html:12
+msgid "Click to Register!"
+msgstr "Cliquez pour vous inscrire !"
+
+#: myapp/templates/login.html:14
+msgid "Forgot Your Password?"
+msgstr "Mot de passe oublié ?"
+
+#: myapp/templates/login.html:15
+msgid "Click to Reset It"
+msgstr "Cliquez pour le réinitialiser"
+
+#: myapp/templates/reset_password.html:5
+msgid "Reset Your Password"
+msgstr "Réinitialisez votre mot de passe"
+
+#: myapp/templates/reset_password_request.html:5
+msgid "Reset Password"
+msgstr "Réinitialiser le mot de passe"
+
+#: myapp/templates/user.html:8
+msgid "User"
+msgstr "Utilisateur"
+
+#: myapp/templates/user.html:10
+msgid "Last seen on"
+msgstr "Dernière visite le"
+
+#: myapp/templates/user.html:18
+msgid "Follow"
+msgstr "Suivre"
