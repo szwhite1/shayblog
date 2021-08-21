@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 from datetime import datetime, timedelta
 import unittest
+import xmlrunner
+import HtmlTestRunner
 
 from flask_sqlalchemy import SQLAlchemy
 from myapp import create_app, db
@@ -13,7 +15,7 @@ class TestConfig(Config):
     SQLALCHEMY_DATABASE_URI = 'sqlite://'
 
 
-class UserModelCase(unittest.TestCase):
+class UserModelCase(unittest.TestCase):    
     def setUp(self):
         self.app = create_app(TestConfig)
         self.app_context = self.app.app_context()
@@ -100,4 +102,6 @@ class UserModelCase(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    unittest.main(verbosity=2)
+    # unittest.main(verbosity=2)
+    unittest.main(testRunner=xmlrunner.XMLTestRunner(output='tests/xml_reports/usr-model-test-report'))
+    # unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output='tests/html_reports/usr-model-test-report', report_title='User Model Test Report', descriptions='PyUnit (aka unittest) Reporting Using HtmlRunner'))
