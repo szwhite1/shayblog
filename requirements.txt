@@ -21,6 +21,7 @@ Flask-WTF==0.14.3
 greenlet==1.1.0
 guess-language-spirit==0.5.3
 gunicorn==19.9.0
+html-testRunner==1.2.1
 idna==2.10
 itsdangerous==1.1.0
 Jinja2==2.11.3
