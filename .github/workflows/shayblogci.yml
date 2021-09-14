@@ -5,9 +5,9 @@ name: ShayBlog
 
 on:
   push:
-    branches: [ main, gitorigin ]
+    branches: [ dev ]
   pull_request:
-    branches: [ main, gitorigin ]
+    branches: [ staging, main, production ]
 
 jobs:
   build:
