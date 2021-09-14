@@ -2,6 +2,11 @@
 .vscode
 .pot
 .env
+.flaskenv
 tests/xml_reports/
 tests/html_reports/
 logs
+myapp.db
+gunicorn_config.py
+# Translations
+*.mo
