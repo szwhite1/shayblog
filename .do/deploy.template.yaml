@@ -1,51 +1,55 @@
 spec:
-  name: shayblog
+  name: app
+  databases:
+  - name: sbexample-db
+    engine: PG
+    num_nodes: 1
+    size: db-s-dev-database
+    version: "12"  
   services:
-    - name: config
-      git:
-        branch: main
-        repo_clone_url: https://github.com/szwhite1/shayblog.git
-    - build_command: python -m pip install psycopg2-binary
-      environment_slug: python
-      envs:
-      - key: DATABASE_URL
-        scope: RUN_TIME
-        value: ${sbexample-db.DATABASE_URL}
-      - key: SECRET_KEY
-        scope: RUN_AND_BUILD_TIME
-        type: SECRET
-        value: "put-a-secure-secret-here"
-      - key: MAIL_SERVER
-        scope: RUN_AND_BUILD_TIME
-        type: SECRET
-        value: mail.example.com
-      - key: MAIL_PORT
-        scope: RUN_AND_BUILD_TIME
-        type: SECRET
-        value: 587
-      - key: MAIL_USERNAME
-        scope: RUN_AND_BUILD_TIME
-        type: SECRET
-        value: username@example.com
-      - key: MAIL_PASSWORD
-        scope: RUN_AND_BUILD_TIME
-        type: SECRET
-        value: mailpasshere
-      - key: ADMINS
-        scope: RUN_AND_BUILD_TIME
-        type: SECRET
-        value: '["admin1@example.com", "admin2@example.com"]'
-      - key: MS_TRANSLATOR_KEY
-        scope: RUN_AND_BUILD_TIME
-        type: SECRET
-        value: ms-translator-secure-key-here
-      http_port: 8080
-      routes:
-      - path: /
-      run_command: |
-        flask db upgrade;
-        flask translate compile;
-        gunicorn --worker-tmp-dir /dev/shm shayblog:app
-      source_dir: /
-    databases:
-    - name: sbexample-db
+  - name: shayblog
+    git:
+      repo_clone_url: https://github.com/szwhite1/shayblog.git
+      branch: main
+    build_command: python -m pip install psycopg2-binary    
+    environment_slug: python
+    envs:
+    - key: DATABASE_URL
+      scope: RUN_TIME
+      value: ${sbexample-db.DATABASE_URL}
+    - key: SECRET_KEY
+      scope: RUN_AND_BUILD_TIME
+      type: SECRET
+      value: "put-a-secure-secret-here"
+    - key: MAIL_SERVER
+      scope: RUN_AND_BUILD_TIME
+      type: SECRET
+      value: "mail.example.com"
+    - key: MAIL_PORT
+      scope: RUN_AND_BUILD_TIME
+      type: SECRET
+      value: "587"
+    - key: MAIL_USERNAME
+      scope: RUN_AND_BUILD_TIME
+      type: SECRET
+      value: "username@example.com"
+    - key: MAIL_PASSWORD
+      scope: RUN_AND_BUILD_TIME
+      type: SECRET
+      value: "mailpasshere"
+    - key: ADMINS
+      scope: RUN_AND_BUILD_TIME
+      type: SECRET
+      value: "admin1@example.com"
+    - key: MS_TRANSLATOR_KEY
+      scope: RUN_AND_BUILD_TIME
+      type: SECRET
+      value: "ms-translator-secure-key-here"
+    http_port: 8080
+    routes:
+    - path: /      
+    run_command: |-
+      flask db upgrade;
+      flask translate compile;
+      gunicorn --worker-tmp-dir /dev/shm shayblog:app
+    source_dir: /
