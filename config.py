@@ -19,4 +19,6 @@ class Config(object):
     LANGUAGES = ['en', 'es', 'fr', 'de']
     MS_TRANSLATOR_KEY = os.environ.get('MS_TRANSLATOR_KEY')
     ELASTICSEARCH_URL = os.environ.get('ELASTICSEARCH_URL')
+    ELASTICSEARCH_USERNAME = os.environ.get('ELASTICSEARCH_USERNAME')
+    ELASTICSEARCH_PASSWORD = os.environ.get('ELASTICSEARCH_PASSWORD')
     POSTS_PER_PAGE = 25
