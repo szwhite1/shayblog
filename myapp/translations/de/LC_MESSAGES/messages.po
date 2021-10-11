@@ -7,121 +7,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-05-19 10:05-0400\n"
+"POT-Creation-Date: 2021-10-10 23:10-0400\n"
 "PO-Revision-Date: 2021-05-19 10:06-0400\n"
 "Last-Translator: \n"
 "Language: de\n"
 "Language-Team: de <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
-"X-Generator: Poedit 2.4.3\n"
 
-#: myapp/__init__.py:21
+#: myapp/__init__.py:19
 msgid "Please log in to access this page."
 msgstr "Bitte anmelden um Zugriff auf diese Seite zu erlangen."
-
-#: myapp/forms.py:8 myapp/forms.py:14 myapp/forms.py:43
-msgid "Username"
-msgstr "Benutzername"
-
-#: myapp/forms.py:9 myapp/forms.py:16 myapp/forms.py:37
-msgid "Password"
-msgstr "Passwort"
-
-#: myapp/forms.py:10
-msgid "Remember Me"
-msgstr "Angemeldet bleiben"
-
-#: myapp/forms.py:11 myapp/templates/login.html:5
-msgid "Sign In"
-msgstr "Anmelden"
-
-#: myapp/forms.py:15 myapp/forms.py:32
-msgid "Email"
-msgstr "E-Mail"
-
-#: myapp/forms.py:17 myapp/forms.py:38
-msgid "Repeat Password"
-msgstr "Passwort wiederholen"
-
-#: myapp/forms.py:18 myapp/templates/register.html:5
-msgid "Register"
-msgstr "Registrieren"
-
-#: myapp/forms.py:23 myapp/forms.py:55
-msgid "Username is already in use. Please select a different username."
-msgstr ""
-"Der Benutzername ist bereits in Gebrauch. Bitte wählen Sie einen anderen "
-"Benutzernamen."
-
-#: myapp/forms.py:28
-msgid "Email address is already in use. Please provide a different email address."
-msgstr ""
-"Die E-Mail-Adresse ist bereits in Gebrauch. Bitte geben Sie eine andere E-Mail-"
-"Adresse an."
-
-#: myapp/forms.py:33 myapp/forms.py:39
-msgid "Request Password Reset"
-msgstr "Neues Passwort anfordern"
-
-#: myapp/forms.py:44
-msgid "About Me"
-msgstr "Über mich"
-
-#: myapp/forms.py:45 myapp/forms.py:59
-msgid "Submit"
-msgstr "Senden"
-
-#: myapp/routes.py:34
-msgid "Your post in now live!"
-msgstr "Ihr Beitrag ist jetzt live!"
-
-#: myapp/routes.py:65
-msgid "Invalid username or password"
-msgstr "Ungültiger Benutzername oder Passwort"
-
-#: myapp/routes.py:92
-msgid "Congratulations, you are now a registered user!"
-msgstr "Herzlichen Glückwunsch, Sie sind jetzt ein registrierter Benutzer!"
-
-#: myapp/routes.py:106
-msgid "Check your email for the instructions to reset your password"
-msgstr ""
-"Prüfen Sie Ihre E-Mail auf die Anweisungen zum Zurücksetzen Ihres Passworts"
-
-#: myapp/routes.py:122
-msgid "Your password has been reset."
-msgstr "Ihr Passwort wurde zurückgesetzt."
-
-#: myapp/routes.py:151
-msgid "Your changes have been saved."
-msgstr "Ihre Änderungen wurden gespeichert."
-
-#: myapp/routes.py:166 myapp/routes.py:186
-#, python-format
-msgid "User %(username)s not found."
-msgstr "Benutzer %(username)s nicht gefunden."
-
-#: myapp/routes.py:169
-msgid "You cannot follow yourself!"
-msgstr "Sie können sich selbst nicht folgen!"
-
-#: myapp/routes.py:173
-#, python-format
-msgid "You are now following %(username)s!"
-msgstr "Sie folgen jetzt %(username)s!"
-
-#: myapp/routes.py:189
-msgid "You cannot unfollow yourself!"
-msgstr "Sie können sich nicht selbst entfolgen!"
-
-#: myapp/routes.py:193
-#, python-format
-msgid "You unfollowed %(username)s"
-msgstr "Sie haben %(username)s entfolgt"
 
 #: myapp/translate.py:10
 msgid "Error: the translation service is not configured."
@@ -131,30 +30,150 @@ msgstr "Fehler: Der Übersetzungsdienst ist nicht konfiguriert."
 msgid "Error: the translation service failed."
 msgstr "Fehler: Der Übersetzungsdienst ist fehlgeschlagen."
 
-#: myapp/templates/404.html:4
-msgid "Not Found"
-msgstr "Nicht gefunden"
+#: myapp/auth/email.py:8
+#, fuzzy
+msgid "[ShayBlog] Reset Your Password"
+msgstr "Passwort zurücksetzen"
 
-#: myapp/templates/404.html:5 myapp/templates/500.html:6
-msgid "Back"
-msgstr "Zurück"
+#: myapp/auth/forms.py:8 myapp/auth/forms.py:14 myapp/main/forms.py:10
+msgid "Username"
+msgstr "Benutzername"
 
-#: myapp/templates/500.html:4
-msgid "An unexpected error has occurred"
-msgstr "Ein unerwarteter Fehler ist aufgetreten"
+#: myapp/auth/forms.py:9 myapp/auth/forms.py:16 myapp/auth/forms.py:37
+msgid "Password"
+msgstr "Passwort"
 
-#: myapp/templates/500.html:5
-msgid "The administrator has been notified. Sorry for the inconvenience!"
+#: myapp/auth/forms.py:10
+msgid "Remember Me"
+msgstr "Angemeldet bleiben"
+
+#: myapp/auth/forms.py:11 myapp/templates/auth/login.html:5
+msgid "Sign In"
+msgstr "Anmelden"
+
+#: myapp/auth/forms.py:15 myapp/auth/forms.py:32
+msgid "Email"
+msgstr "E-Mail"
+
+#: myapp/auth/forms.py:17 myapp/auth/forms.py:38
+msgid "Repeat Password"
+msgstr "Passwort wiederholen"
+
+#: myapp/auth/forms.py:18 myapp/templates/auth/register.html:5
+msgid "Register"
+msgstr "Registrieren"
+
+#: myapp/auth/forms.py:23 myapp/main/forms.py:22
+msgid "Username is already in use. Please select a different username."
 msgstr ""
-"Der Administrator wurde benachrichtigt. Entschuldigung für die "
-"Unannehmlichkeiten!"
+"Der Benutzername ist bereits in Gebrauch. Bitte wählen Sie einen anderen "
+"Benutzernamen."
 
-#: myapp/templates/_post.html:14
+#: myapp/auth/forms.py:28
+msgid "Email address is already in use. Please provide a different email address."
+msgstr ""
+"Die E-Mail-Adresse ist bereits in Gebrauch. Bitte geben Sie eine andere E"
+"-Mail-Adresse an."
+
+#: myapp/auth/forms.py:33 myapp/auth/forms.py:39
+msgid "Request Password Reset"
+msgstr "Neues Passwort anfordern"
+
+#: myapp/auth/routes.py:20
+msgid "Invalid username or password"
+msgstr "Ungültiger Benutzername oder Passwort"
+
+#: myapp/auth/routes.py:47
+msgid "Congratulations, you are now a registered user!"
+msgstr "Herzlichen Glückwunsch, Sie sind jetzt ein registrierter Benutzer!"
+
+#: myapp/auth/routes.py:61
+msgid "Check your email for the instructions to reset your password"
+msgstr ""
+"Prüfen Sie Ihre E-Mail auf die Anweisungen zum Zurücksetzen Ihres "
+"Passworts"
+
+#: myapp/auth/routes.py:77
+msgid "Your password has been reset."
+msgstr "Ihr Passwort wurde zurückgesetzt."
+
+#: myapp/main/forms.py:11
+msgid "About Me"
+msgstr "Über mich"
+
+#: myapp/main/forms.py:12 myapp/main/forms.py:26 myapp/main/forms.py:31
+#: myapp/main/forms.py:48
+msgid "Submit"
+msgstr "Senden"
+
+#: myapp/main/forms.py:30
+msgid "Say something"
+msgstr ""
+
+#: myapp/main/forms.py:35 myapp/main/routes.py:158
+#, fuzzy
+msgid "Search"
+msgstr "Benutzer"
+
+#: myapp/main/forms.py:46
+msgid "Message"
+msgstr ""
+
+#: myapp/main/routes.py:39
+msgid "Your post in now live!"
+msgstr "Ihr Beitrag ist jetzt live!"
+
+#: myapp/main/routes.py:46 myapp/templates/base.html:21
+msgid "Home"
+msgstr "Startseite"
+
+#: myapp/main/routes.py:92
+msgid "Your changes have been saved."
+msgstr "Ihre Änderungen wurden gespeichert."
+
+#: myapp/main/routes.py:97 myapp/templates/edit_profile.html:5
+#: myapp/templates/user.html:13
+msgid "Edit Profile"
+msgstr "Profil bearbeiten"
+
+#: myapp/main/routes.py:107 myapp/main/routes.py:127
+#, python-format
+msgid "User %(username)s not found."
+msgstr "Benutzer %(username)s nicht gefunden."
+
+#: myapp/main/routes.py:110
+msgid "You cannot follow yourself!"
+msgstr "Sie können sich selbst nicht folgen!"
+
+#: myapp/main/routes.py:114
+#, python-format
+msgid "You are now following %(username)s!"
+msgstr "Sie folgen jetzt %(username)s!"
+
+#: myapp/main/routes.py:130
+msgid "You cannot unfollow yourself!"
+msgstr "Sie können sich nicht selbst entfolgen!"
+
+#: myapp/main/routes.py:134
+#, python-format
+msgid "You unfollowed %(username)s"
+msgstr "Sie haben %(username)s entfolgt"
+
+#: myapp/main/routes.py:172
+#, fuzzy
+msgid "Your message has been sent."
+msgstr "Ihr Passwort wurde zurückgesetzt."
+
+#: myapp/main/routes.py:174
+msgid "Send Message"
+msgstr ""
+
+#: myapp/templates/_post.html:16
 #, python-format
 msgid "%(username)s said %(when)s"
 msgstr "%(username)s sagte %(when)s"
 
-#: myapp/templates/_post.html:24
+#: myapp/templates/_post.html:26
 msgid "Translate"
 msgstr "Übersetzen"
 
@@ -162,33 +181,29 @@ msgstr "Übersetzen"
 msgid "Welcome to ShayBlog!"
 msgstr "Willkommen bei ShayBlog!"
 
-#: myapp/templates/base.html:21
-msgid "Home"
-msgstr "Startseite"
-
 #: myapp/templates/base.html:22
 msgid "Explore"
 msgstr "Entdecken"
 
-#: myapp/templates/base.html:26
+#: myapp/templates/base.html:33
 msgid "Login"
 msgstr "Anmelden"
 
-#: myapp/templates/base.html:28
+#: myapp/templates/base.html:35 myapp/templates/messages.html:4
+msgid "Messages"
+msgstr ""
+
+#: myapp/templates/base.html:36
 msgid "Profile"
 msgstr "Profil"
 
-#: myapp/templates/base.html:29
+#: myapp/templates/base.html:37
 msgid "Logout"
 msgstr "Abmelden"
 
-#: myapp/templates/base.html:66
+#: myapp/templates/base.html:74
 msgid "Error: Could not contact server."
 msgstr "Fehler: Konnte den Server nicht kontaktieren."
-
-#: myapp/templates/edit_profile.html:5 myapp/templates/user.html:13
-msgid "Edit Profile"
-msgstr "Profil bearbeiten"
 
 #: myapp/templates/index.html:5
 #, python-format
@@ -203,38 +218,101 @@ msgstr "Neuere Beiträge"
 msgid "Older Posts"
 msgstr "Ältere Beiträge"
 
-#: myapp/templates/login.html:12
-msgid "New User?"
-msgstr "Neuer Benutzer?"
+#: myapp/templates/messages.html:12
+msgid "Newer messages"
+msgstr ""
 
-#: myapp/templates/login.html:12
-msgid "Click to Register!"
-msgstr "Klicken Sie zum Registrieren!"
+#: myapp/templates/messages.html:17
+msgid "Older messages"
+msgstr ""
 
-#: myapp/templates/login.html:14
-msgid "Forgot Your Password?"
-msgstr "Passwort vergessen?"
+#: myapp/templates/search.html:4
+msgid "Search Results"
+msgstr ""
 
-#: myapp/templates/login.html:15
-msgid "Click to Reset It"
-msgstr "Klicken Sie zum Zurücksetzen"
+#: myapp/templates/search.html:12
+msgid "Previous results"
+msgstr ""
 
-#: myapp/templates/reset_password.html:5
-msgid "Reset Your Password"
-msgstr "Passwort zurücksetzen"
+#: myapp/templates/search.html:17
+msgid "Next results"
+msgstr ""
 
-#: myapp/templates/reset_password_request.html:5
-msgid "Reset Password"
-msgstr "Passwort zurücksetzen"
+#: myapp/templates/send_message.html:5
+#, python-format
+msgid "Send Message to %(recipient)s"
+msgstr ""
 
 #: myapp/templates/user.html:8
 msgid "User"
 msgstr "Benutzer"
 
-#: myapp/templates/user.html:10
+#: myapp/templates/user.html:10 myapp/templates/user_popup.html:9
 msgid "Last seen on"
 msgstr "Zuletzt gesehen am"
 
-#: myapp/templates/user.html:18
+#: myapp/templates/user.html:18 myapp/templates/user_popup.html:17
 msgid "Follow"
 msgstr "Folgen"
+
+#: myapp/templates/user.html:30
+msgid "Send private message"
+msgstr ""
+
+#: myapp/templates/user_popup.html:11
+#, python-format
+msgid "%(count)d followers"
+msgstr ""
+
+#: myapp/templates/user_popup.html:11
+#, python-format
+msgid "%(count)d following"
+msgstr ""
+
+#: myapp/templates/user_popup.html:24
+#, fuzzy
+msgid "Unfollow"
+msgstr "Folgen"
+
+#: myapp/templates/auth/login.html:12
+msgid "New User?"
+msgstr "Neuer Benutzer?"
+
+#: myapp/templates/auth/login.html:12
+msgid "Click to Register!"
+msgstr "Klicken Sie zum Registrieren!"
+
+#: myapp/templates/auth/login.html:14
+msgid "Forgot Your Password?"
+msgstr "Passwort vergessen?"
+
+#: myapp/templates/auth/login.html:15
+msgid "Click to Reset It"
+msgstr "Klicken Sie zum Zurücksetzen"
+
+#: myapp/templates/auth/reset_password.html:5
+msgid "Reset Your Password"
+msgstr "Passwort zurücksetzen"
+
+#: myapp/templates/auth/reset_password_request.html:5
+msgid "Reset Password"
+msgstr "Passwort zurücksetzen"
+
+#: myapp/templates/errors/404.html:4
+msgid "Not Found"
+msgstr "Nicht gefunden"
+
+#: myapp/templates/errors/404.html:5 myapp/templates/errors/500.html:6
+msgid "Back"
+msgstr "Zurück"
+
+#: myapp/templates/errors/500.html:4
+msgid "An unexpected error has occurred"
+msgstr "Ein unerwarteter Fehler ist aufgetreten"
+
+#: myapp/templates/errors/500.html:5
+msgid "The administrator has been notified. Sorry for the inconvenience!"
+msgstr ""
+"Der Administrator wurde benachrichtigt. Entschuldigung für die "
+"Unannehmlichkeiten!"
+
