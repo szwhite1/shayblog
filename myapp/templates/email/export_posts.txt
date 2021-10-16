@@ -1,0 +1,7 @@
+Dear {{ user.username }},
+
+Attached is the archive of your posts that you requested.
+
+Sincerely,
+
+The ShayBlog Team

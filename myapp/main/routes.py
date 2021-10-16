@@ -1,5 +1,6 @@
 from datetime import datetime
 from flask import render_template, flash, redirect, url_for, request, g, jsonify, current_app
+import flask
 from flask_login import current_user, login_required
 from flask_babel import _, get_locale
 from langdetect import detect, LangDetectException
@@ -202,3 +203,14 @@ def notifications():
 		'data': n.get_data(),
 		'timestamp': n.timestamp
 	} for n in notifications])
+
+
+@bp.route('/export_posts')
+@login_required
+def export_posts():
+	if current_user.get_task_in_progress('export_posts'):
+		flash(_('An export task is currently in progress'))
+	else:
+		current_user.launch_task('export_posts', _('Exporting posts...'))
+		db.session.commit()
+	return redirect(url_for('main.user', username=current_user.username))

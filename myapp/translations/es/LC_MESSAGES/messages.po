@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-10-10 23:10-0400\n"
-"PO-Revision-Date: 2021-10-10 23:18-0400\n"
+"POT-Creation-Date: 2021-10-16 17:15-0400\n"
+"PO-Revision-Date: 2021-10-16 17:18-0400\n"
 "Last-Translator: \n"
 "Language: es\n"
 "Language-Team: es <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Generated-By: Babel 2.9.1\n"
 "X-Generator: Poedit 2.4.3\n"
 
-#: myapp/__init__.py:19
+#: myapp/__init__.py:21
 msgid "Please log in to access this page."
 msgstr "Por favor, identificate para acceer a la página."
 
@@ -109,61 +109,69 @@ msgstr "Enviar"
 msgid "Say something"
 msgstr "Di algo"
 
-#: myapp/main/forms.py:35 myapp/main/routes.py:158
+#: myapp/main/forms.py:35 myapp/main/routes.py:159
 msgid "Search"
 msgstr "Buscar"
 
 #: myapp/main/forms.py:46
 msgid "Message"
-msgstr "Mensaje:"
+msgstr "Mensaje"
 
-#: myapp/main/routes.py:39
+#: myapp/main/routes.py:40
 msgid "Your post in now live!"
 msgstr "¡Su puesto está ahora en vivo!"
 
-#: myapp/main/routes.py:46 myapp/templates/base.html:21
+#: myapp/main/routes.py:47 myapp/templates/base.html:21
 msgid "Home"
 msgstr "Inicio"
 
-#: myapp/main/routes.py:92
+#: myapp/main/routes.py:93
 msgid "Your changes have been saved."
 msgstr "Sus cambios han sido guardados."
 
-#: myapp/main/routes.py:97 myapp/templates/edit_profile.html:5
+#: myapp/main/routes.py:98 myapp/templates/edit_profile.html:5
 #: myapp/templates/user.html:13
 msgid "Edit Profile"
 msgstr "Editar Perfil"
 
-#: myapp/main/routes.py:107 myapp/main/routes.py:127
+#: myapp/main/routes.py:108 myapp/main/routes.py:128
 #, python-format
 msgid "User %(username)s not found."
 msgstr "Usuario %(username)s no encontrado."
 
-#: myapp/main/routes.py:110
+#: myapp/main/routes.py:111
 msgid "You cannot follow yourself!"
 msgstr "No puedes seguirte a ti mismo!"
 
-#: myapp/main/routes.py:114
+#: myapp/main/routes.py:115
 #, python-format
 msgid "You are now following %(username)s!"
 msgstr "¡Ahora sigues a %(username)s!"
 
-#: myapp/main/routes.py:130
+#: myapp/main/routes.py:131
 msgid "You cannot unfollow yourself!"
 msgstr "No puedes dejar de seguirte a ti mismo!"
 
-#: myapp/main/routes.py:134
+#: myapp/main/routes.py:135
 #, python-format
 msgid "You unfollowed %(username)s"
 msgstr "Has dejado de seguir a %(username)s"
 
-#: myapp/main/routes.py:172
+#: myapp/main/routes.py:173
 msgid "Your message has been sent."
 msgstr "Tu mensaje ha sido enviado."
 
-#: myapp/main/routes.py:174
+#: myapp/main/routes.py:175
 msgid "Send Message"
 msgstr "Enviar mensaje"
+
+#: myapp/main/routes.py:212
+msgid "An export task is currently in progress"
+msgstr "Hay una tarea de exportación en curso"
+
+#: myapp/main/routes.py:214
+msgid "Exporting posts..."
+msgstr "Exportar puestos..."
 
 #: myapp/templates/_post.html:16
 #, python-format
@@ -186,19 +194,19 @@ msgstr "Explorar"
 msgid "Login"
 msgstr "Iniciar sesión"
 
-#: myapp/templates/base.html:35 myapp/templates/messages.html:4
+#: myapp/templates/base.html:37 myapp/templates/messages.html:4
 msgid "Messages"
 msgstr "Mensajes"
 
-#: myapp/templates/base.html:36
+#: myapp/templates/base.html:45
 msgid "Profile"
 msgstr "Perfil"
 
-#: myapp/templates/base.html:37
+#: myapp/templates/base.html:46
 msgid "Logout"
 msgstr "Cerrar sesión"
 
-#: myapp/templates/base.html:74
+#: myapp/templates/base.html:95
 msgid "Error: Could not contact server."
 msgstr "Error: No se ha podido contactar con el servidor."
 
@@ -248,11 +256,15 @@ msgstr "Usuario"
 msgid "Last seen on"
 msgstr "Visto por última vez en"
 
-#: myapp/templates/user.html:18 myapp/templates/user_popup.html:17
+#: myapp/templates/user.html:15
+msgid "Export Your Posts"
+msgstr "Exporte sus publicaciones"
+
+#: myapp/templates/user.html:21 myapp/templates/user_popup.html:17
 msgid "Follow"
 msgstr "Seguir"
 
-#: myapp/templates/user.html:30
+#: myapp/templates/user.html:33
 msgid "Send private message"
 msgstr "Enviar mensaje privado"
 

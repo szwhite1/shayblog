@@ -7,18 +7,19 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-10-10 23:10-0400\n"
-"PO-Revision-Date: 2021-05-19 10:09-0400\n"
+"POT-Creation-Date: 2021-10-16 17:15-0400\n"
+"PO-Revision-Date: 2021-10-16 17:17-0400\n"
 "Last-Translator: \n"
 "Language: fr\n"
 "Language-Team: fr <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
+"X-Generator: Poedit 2.4.3\n"
 
-#: myapp/__init__.py:19
+#: myapp/__init__.py:21
 msgid "Please log in to access this page."
 msgstr "SVP Connectez-vous pour accéder à cette page."
 
@@ -31,9 +32,8 @@ msgid "Error: the translation service failed."
 msgstr "Erreur : le service de traduction a échoué."
 
 #: myapp/auth/email.py:8
-#, fuzzy
 msgid "[ShayBlog] Reset Your Password"
-msgstr "Réinitialisez votre mot de passe"
+msgstr "[ShayBlog] Réinitialiser votre mot de passe"
 
 #: myapp/auth/forms.py:8 myapp/auth/forms.py:14 myapp/main/forms.py:10
 msgid "Username"
@@ -72,8 +72,8 @@ msgstr ""
 #: myapp/auth/forms.py:28
 msgid "Email address is already in use. Please provide a different email address."
 msgstr ""
-"L'adresse électronique est déjà utilisée. Veuillez fournir une autre "
-"adresse électronique."
+"L'adresse électronique est déjà utilisée. Veuillez fournir une autre adresse "
+"électronique."
 
 #: myapp/auth/forms.py:33 myapp/auth/forms.py:39
 msgid "Request Password Reset"
@@ -108,65 +108,71 @@ msgstr "Envoyer"
 
 #: myapp/main/forms.py:30
 msgid "Say something"
-msgstr ""
+msgstr "Dites quelque chose"
 
-#: myapp/main/forms.py:35 myapp/main/routes.py:158
-#, fuzzy
+#: myapp/main/forms.py:35 myapp/main/routes.py:159
 msgid "Search"
-msgstr "Utilisateur"
+msgstr "Rechercher"
 
 #: myapp/main/forms.py:46
 msgid "Message"
-msgstr ""
+msgstr "Message"
 
-#: myapp/main/routes.py:39
+#: myapp/main/routes.py:40
 msgid "Your post in now live!"
 msgstr "Votre message est maintenant en ligne !"
 
-#: myapp/main/routes.py:46 myapp/templates/base.html:21
+#: myapp/main/routes.py:47 myapp/templates/base.html:21
 msgid "Home"
 msgstr "Accueil"
 
-#: myapp/main/routes.py:92
+#: myapp/main/routes.py:93
 msgid "Your changes have been saved."
 msgstr "Vos modifications ont été sauvegardées."
 
-#: myapp/main/routes.py:97 myapp/templates/edit_profile.html:5
+#: myapp/main/routes.py:98 myapp/templates/edit_profile.html:5
 #: myapp/templates/user.html:13
 msgid "Edit Profile"
 msgstr "Modifier le profil"
 
-#: myapp/main/routes.py:107 myapp/main/routes.py:127
+#: myapp/main/routes.py:108 myapp/main/routes.py:128
 #, python-format
 msgid "User %(username)s not found."
 msgstr "Utilisateur %(username)s non trouvé."
 
-#: myapp/main/routes.py:110
+#: myapp/main/routes.py:111
 msgid "You cannot follow yourself!"
 msgstr "Vous ne pouvez pas vous suivre !"
 
-#: myapp/main/routes.py:114
+#: myapp/main/routes.py:115
 #, python-format
 msgid "You are now following %(username)s!"
 msgstr "Vous suivez maintenant %(username)s !"
 
-#: myapp/main/routes.py:130
+#: myapp/main/routes.py:131
 msgid "You cannot unfollow yourself!"
 msgstr "Vous ne pouvez pas vous épanouir !"
 
-#: myapp/main/routes.py:134
+#: myapp/main/routes.py:135
 #, python-format
 msgid "You unfollowed %(username)s"
 msgstr "Vous n'avez pas suivi les %(username)s"
 
-#: myapp/main/routes.py:172
-#, fuzzy
+#: myapp/main/routes.py:173
 msgid "Your message has been sent."
-msgstr "Votre mot de passe a été réinitialisé."
+msgstr "Votre message a été envoyé."
 
-#: myapp/main/routes.py:174
+#: myapp/main/routes.py:175
 msgid "Send Message"
-msgstr ""
+msgstr "Envoyer le message"
+
+#: myapp/main/routes.py:212
+msgid "An export task is currently in progress"
+msgstr "Une tâche d'exportation est actuellement en cours"
+
+#: myapp/main/routes.py:214
+msgid "Exporting posts..."
+msgstr "Exporter des postes..."
 
 #: myapp/templates/_post.html:16
 #, python-format
@@ -189,19 +195,19 @@ msgstr "Explorer"
 msgid "Login"
 msgstr "Connexion"
 
-#: myapp/templates/base.html:35 myapp/templates/messages.html:4
+#: myapp/templates/base.html:37 myapp/templates/messages.html:4
 msgid "Messages"
-msgstr ""
+msgstr "Messages"
 
-#: myapp/templates/base.html:36
+#: myapp/templates/base.html:45
 msgid "Profile"
 msgstr "Profil"
 
-#: myapp/templates/base.html:37
+#: myapp/templates/base.html:46
 msgid "Logout"
 msgstr "Déconnexion"
 
-#: myapp/templates/base.html:74
+#: myapp/templates/base.html:95
 msgid "Error: Could not contact server."
 msgstr "Erreur : Impossible de contacter le serveur."
 
@@ -220,28 +226,28 @@ msgstr "Articles plus anciens"
 
 #: myapp/templates/messages.html:12
 msgid "Newer messages"
-msgstr ""
+msgstr "Messages plus récents"
 
 #: myapp/templates/messages.html:17
 msgid "Older messages"
-msgstr ""
+msgstr "Messages plus anciens"
 
 #: myapp/templates/search.html:4
 msgid "Search Results"
-msgstr ""
+msgstr "Résultats de la recherche"
 
 #: myapp/templates/search.html:12
 msgid "Previous results"
-msgstr ""
+msgstr "Résultats précédents"
 
 #: myapp/templates/search.html:17
 msgid "Next results"
-msgstr ""
+msgstr "Résultats suivants"
 
 #: myapp/templates/send_message.html:5
 #, python-format
 msgid "Send Message to %(recipient)s"
-msgstr ""
+msgstr "Envoyer un message à %(recipient)s"
 
 #: myapp/templates/user.html:8
 msgid "User"
@@ -251,28 +257,31 @@ msgstr "Utilisateur"
 msgid "Last seen on"
 msgstr "Dernière visite le"
 
-#: myapp/templates/user.html:18 myapp/templates/user_popup.html:17
+#: myapp/templates/user.html:15
+msgid "Export Your Posts"
+msgstr "Exporter vos articles"
+
+#: myapp/templates/user.html:21 myapp/templates/user_popup.html:17
 msgid "Follow"
 msgstr "Suivre"
 
-#: myapp/templates/user.html:30
+#: myapp/templates/user.html:33
 msgid "Send private message"
-msgstr ""
+msgstr "Envoyer un message privé"
 
 #: myapp/templates/user_popup.html:11
 #, python-format
 msgid "%(count)d followers"
-msgstr ""
+msgstr "%(count)d’adeptes"
 
 #: myapp/templates/user_popup.html:11
 #, python-format
 msgid "%(count)d following"
-msgstr ""
+msgstr "%(count)d suivant"
 
 #: myapp/templates/user_popup.html:24
-#, fuzzy
 msgid "Unfollow"
-msgstr "Suivre"
+msgstr "Ne plus suivre"
 
 #: myapp/templates/auth/login.html:12
 msgid "New User?"
@@ -313,4 +322,3 @@ msgstr "Un erreur inattendue s'est produite"
 #: myapp/templates/errors/500.html:5
 msgid "The administrator has been notified. Sorry for the inconvenience!"
 msgstr "L'administrateur a été informé. Désolé pour le désagrément !"
-
